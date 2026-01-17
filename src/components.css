@@ -1,0 +1,92 @@
+#bar {
+    position: fixed;
+    top: 4rem;
+    left: -.1rem;
+    width: 3rem;
+    height: 35rem;
+    background-color: color-mix(in oklab, var(--color-light-100) /* #cecefb */ 5%, transparent);
+    border-radius: 1rem;
+    transition: all .4s ease-in-out;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.button {
+    position: fixed;
+    top: 1rem;
+    left: -.1rem;
+    width: 3rem;
+    height: 3rem;
+}
+@media (min-width: 300px) and (max-width: 700px) {
+    button {
+        width: 2.5rem;
+    }
+    #bar {
+        position: fixed;
+        width: 2rem;
+        top: 4rem;
+        left: .1rem;
+    }
+    #bar a {
+        width: 1.5rem;
+        margin-top: 0;
+    }
+}
+@starting-style {
+    #bar {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+#bar a img {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+#bar a img:hover {
+    transform: scale(1.25);
+    transition: ease-in-out .3s;
+}
+#a {
+    background-color: #F1F5F9;
+    border-radius: .5rem;
+}
+#a:hover {
+    transform: scale(1.25);
+    transition: ease-in-out .3s;
+}
+#b {
+    background-color: #82bd9f;
+    border-radius:  0.5rem;
+
+}
+#b:hover {
+    transform: scale(1.25);
+    transition: ease-in-out .3s;
+}
+#c {
+    background-color: #fd0000;
+    border-radius: .5rem;
+}
+#c:hover {
+    transform: scale(1.25);
+    transition: ease-in-out .3s;
+}
+#d {
+    background-color: #fd0000;
+    border-radius: .5rem;
+}
+#d:hover {
+    transform: scale(1.25);
+    transition: ease-in-out .3s;
+}
+#e {
+    background-color: #479fdf;
+    border-radius: .5rem;
+}
+#e:hover {
+    transform: scale(1.25);
+    transition: ease-in-out .3s;
+}

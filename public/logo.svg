@@ -1,0 +1,40 @@
+<svg width="460" height="140" viewBox="0 0 460 140" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Icon -->
+    <g transform="translate(20,20)">
+        <!-- Outer hex -->
+        <polygon points="50,0 100,30 100,90 50,120 0,90 0,30"
+                 fill="#D65108"/>
+
+        <!-- Inner cut -->
+        <polygon points="50,12 88,36 88,84 50,108 12,84 12,36"
+                 fill="#FBFEF9"/>
+
+        <!-- GP symbol -->
+        <path d="
+      M30 45
+      h28
+      a12 12 0 1 1 0 24
+      h-16
+      v16
+      h-12
+      z
+      M46 57
+      h10
+      a6 6 0 1 1 0 12
+      h-10
+      z
+    " fill="#D65108"/>
+    </g>
+
+    <!-- Text -->
+    <text x="150" y="95"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="64"
+          font-weight="900"
+          letter-spacing="4"
+          fill="#FBFEF9">
+        GAMEP
+    </text>
+
+</svg>

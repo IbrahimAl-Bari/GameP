@@ -1,0 +1,27 @@
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Outer hex -->
+    <polygon points="70,10 120,40 120,100 70,130 20,100 20,40"
+             fill="#D65108"/>
+
+    <!-- Inner layer -->
+    <polygon points="70,22 108,46 108,94 70,118 32,94 32,46"
+             fill="#FBFEF9"/>
+
+    <!-- GP mark -->
+    <path d="
+    M50 55
+    h30
+    a14 14 0 1 1 0 28
+    h-18
+    v18
+    h-12
+    z
+    M66 69
+    h12
+    a7 7 0 1 1 0 14
+    h-12
+    z
+  " fill="#D65108"/>
+
+</svg>
