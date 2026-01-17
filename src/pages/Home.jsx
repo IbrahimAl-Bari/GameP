@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Search from '../components/search.jsx'
+import Search from '../components/Search.jsx'
 import {BeatLoader} from "react-spinners";
 import {useDebounce} from "../components/debouce.jsx";
 import Gamecard from '../components/Gamecard.jsx'
