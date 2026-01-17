@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/GameP/',
   resolve: { dedupe: ['react', 'react-dom'] },
   server: {
     proxy: {
