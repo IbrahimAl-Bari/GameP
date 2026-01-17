@@ -1,11 +1,11 @@
 import { useParams, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import Navbar from "./components/Navbar.jsx";
+import Navbar from "../components/Navbar.jsx";
 import { useFavorites } from "../context/FavoritesContext.jsx";
 import { BeatLoader } from "react-spinners";
-import Gamecard from "./components/Gamecard.jsx";
-import {useDebounce} from "./components/debouce.jsx";
-import Search from "./components/Search.jsx"
+import Gamecard from "../components/Gamecard.jsx";
+import {useDebounce} from "../components/debouce.jsx";
+import Search from "../components/Search.jsx"
 
 const base_url = "/api";
 const api_key = import.meta.env.VITE_RAWG_API_KEY;

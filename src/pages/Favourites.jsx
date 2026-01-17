@@ -1,7 +1,7 @@
 
-import GameCard from "./components/Gamecard.jsx";
+import GameCard from "../components/Gamecard.jsx";
 import { useFavorites } from ".././context/FavoritesContext.jsx";
-import NavBar from "./components/NavBar.jsx";
+import NavBar from "../components/NavBar.jsx";
 
 const Favourites = () => {
 

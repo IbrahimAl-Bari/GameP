@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react'
-import Navbar from "./components/Navbar.jsx";
-import Search from './components/Search.jsx'
+import Navbar from "../components/Navbar.jsx";
+import Search from '../components/Search.jsx'
 import {BeatLoader} from "react-spinners";
-import {useDebounce} from "./components/debouce.jsx";
-import Gamecard from "./components/Gamecard.jsx";
+import {useDebounce} from "../components/debouce.jsx";
+import Gamecard from "../components/Gamecard.jsx";
 import {useNavigate} from "react-router-dom";
 
 const base_url = "/api"

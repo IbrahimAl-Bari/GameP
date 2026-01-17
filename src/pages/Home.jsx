@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import Search from './components/Search.jsx'
+import Search from '../components/search.jsx'
 import {BeatLoader} from "react-spinners";
-import {useDebounce} from "./components/debouce.jsx";
-import Gamecard from './components/Gamecard.jsx'
-import Navbar from './components/Navbar.jsx'
-import Filters from './components/Filters.jsx'
+import {useDebounce} from "../components/debouce.jsx";
+import Gamecard from '../components/Gamecard.jsx'
+import Navbar from '../components/Navbar.jsx'
+import Filters from '../components/Filters.jsx'
 import {updateSearchCount , getTrendingGames} from "./../appwrite.js"
 import {useNavigate} from "react-router-dom";
 
