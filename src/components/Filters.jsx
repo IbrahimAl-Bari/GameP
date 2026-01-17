@@ -70,24 +70,23 @@ const Filters = ({ onFilterChange, apiKey }) => {
 
     return (
         <div className="my-8">
+
             {/* Toggle Button */}
-            <div className="flex flex-col items-center justify-center mb-4">
-                <button
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="group flex items-center gap-3 text-[#FBFEF9] hover:text-[#D65108] transition-all duration-300"
-                >
-        <span className="text-2xl font-bold">
-            Filter <span className="text-gradient">Games</span>
-        </span>
-                    <svg
-                        className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
+            <div className="flex justify-center-safe mb-4">
+
+        <div className=" flex text-2xl font-bold text-[#FBFEF9] hover:text-[#D65108] transition-all duration-300" onClick={() => setIsOpen(!isOpen)}>
+        <h2 className={"hover:text-[#D65108] transition-all duration-300"}>Filters  <span className={"text-gradient"}> Games </span> .</h2>
+
+            <svg
+                className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+            >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
 
                 {hasActiveFilters && (
                     <button
@@ -112,7 +111,7 @@ const Filters = ({ onFilterChange, apiKey }) => {
                             <span className="text-2xl">🎮</span>
                             Choose Your Platform
                         </h3>
-                        <div className="grid grid-cols-subgrid sm:grid-cols-3 md:grid-cols-5 gap-3">
+                        <div className="grid grid-cols-subgrid max-xs:grid-cols-2 xs:grid-cols-3 md:grid-cols-5 gap-3">
                             {platforms.map(platform => (
                                 <button
                                     key={platform.id}
@@ -153,7 +152,7 @@ const Filters = ({ onFilterChange, apiKey }) => {
                             <span className="text-2xl">⭐</span>
                             Rating Quality
                         </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3">
+                        <div className="grid grid-cols-1  max-xs:grid-cols-2 xs:grid-cols-3 md:grid-cols-5 gap-3">
                             {metacriticRanges.map(range => (
                                 <button
                                     key={range.value}
@@ -188,16 +187,16 @@ const Filters = ({ onFilterChange, apiKey }) => {
 
                     {/* Genres Section */}
                     <div>
-                        <h3 className="text-lg font-bold mb-4 text-[#FBFEF9] flex items-center gap-2">
+                        <h3 className="text-lg font-bold mb-4 flex justify-center text-[#FBFEF9] items-center gap-2">
                             <span className="text-2xl">🎯</span>
                             Pick Your Vibe
                         </h3>
-                        <div className="flex flex-wrap gap-2 max-h-64 overflow-y-auto custom-scrollbar pr-2">
+                        <div className="flex flex-wrap justify-center max-md:grid max-md:grid-cols-4 max-md:grid-rows-5 gap-2 max-h-64 overflow-hidden pr-2">
                             {genres.map(genre => (
                                 <button
                                     key={genre.id}
                                     onClick={() => toggleGenre(genre.id)}
-                                    className={`xs:px-0 xs:pl-2 xs:py-3 xs:pr-15 xs:text-xs md:pl-5 md:py-2 md:pr-5 md:text-md px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 ${
+                                    className={`max-md:px-0 px-4 py-2 whitespace-nowrap rounded-full text-xs font-semibold transition-all duration-300 transform hover:scale-105 ${
                                         selectedGenres.includes(genre.id)
                                             ? 'bg-[#D65108] text-white shadow-lg shadow-[#D65108]/30'
                                             : 'bg-[#0B0E14] text-[#FBFEF9] hover:bg-[#1a1f2e] border border-[#D65108]/20'
