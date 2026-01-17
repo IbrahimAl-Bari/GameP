@@ -43,9 +43,6 @@
     main {
         @apply min-h-screen relative bg-primary;
     }
-
-
-
     header img {
         @apply w-full max-w-lg h-auto object-contain mx-auto drop-shadow-md;
     }

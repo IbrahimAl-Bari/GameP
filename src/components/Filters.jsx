@@ -75,7 +75,7 @@ const Filters = ({ onFilterChange, apiKey }) => {
             <div className="flex justify-center-safe mb-4">
 
         <div className=" flex text-2xl font-bold text-[#FBFEF9] hover:text-[#D65108] transition-all duration-300" onClick={() => setIsOpen(!isOpen)}>
-        <h2 className={"hover:text-[#D65108] transition-all duration-300"}>Filters  <span className={"text-gradient"}> Games </span> .</h2>
+        <h2 className={"hover:text-[#D65108] transition-all duration-300 whitespace-pre"}>Filter <span className={"text-gradient"}>Games</span> </h2>
 
             <svg
                 className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}

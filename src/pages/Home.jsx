@@ -137,6 +137,9 @@ const Home = () => {
 
     const navigate = useNavigate();
 
+    const togithub = () => {
+        window.location.href = "https://github.com/IbrahimAl-Bari/GameP"
+    };
 
     return (
         <main className={"bg-[#0b0e14]"}>
@@ -144,6 +147,9 @@ const Home = () => {
             <div className="wrapper">
                 <Navbar />
                 <header>
+                    <button onClick={togithub} className={"cursor-pointer max-md:h-10 max-md:w-10 absolute right-2 top-5 flex items-center justify-center w-15 h-15 rounded-2xl bg-[#D65108]"}>
+                        <img className={"max-md:h-10 max-md:w-10 w-20 h-20"} src="/GitHub-Logo.wine.svg" alt=""/>
+                    </button>
                     <img className="w-40 mb-10" src="/logo.svg" alt=""/>
                     <h1>Search Through Thousands of <span className="text-gradient">Games</span></h1>
                     <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
