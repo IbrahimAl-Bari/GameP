@@ -28,7 +28,7 @@ A portfolio project demonstrating real-world React development and API usage.
 4. Open `http://localhost:5173` in your browser
 
 ### 🌐 Live Demo
-[View Live App](game-p-rho.vercel.app)
+[View Live App](https://game-p-rho.vercel.app)
 
 ## 👤 Author
 Ibrahim Al-Bari  
