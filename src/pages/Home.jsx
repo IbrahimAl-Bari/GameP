@@ -12,7 +12,6 @@ import {useNavigate} from "react-router-dom";
 const base_url = "/api"
 const api_key = import.meta.env.VITE_RAWG_API_KEY;
 
-
 const Home = () => {
 
     const [searchTerm, setSearchTerm] = useState("");
